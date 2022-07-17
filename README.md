@@ -1,7 +1,7 @@
--*Приложение написано на .NET Core 6 Web API-
--*БД: PostgreSQL, подключение к БД: User ID=postgres;Password=password;Host=localhost;Port=5432-
--*Метод GET на получение всех заказов в базе-
--*Метод POST на создание нового заказа, возвращается ID созданного заказа-
+- *Приложение написано на .NET Core 6 Web API
+- *БД: PostgreSQL, подключение к БД: User ID=postgres;Password=password;Host=localhost;Port=5432
+- *Метод GET на получение всех заказов в базе
+- *Метод POST на создание нового заказа, возвращается ID созданного заказа
 
 Запуск проекта:
 1. Скачать и запустить Docker
