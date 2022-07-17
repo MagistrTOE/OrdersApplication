@@ -1,0 +1,29 @@
+version: '3.4'
+volumes:
+  postgres_data:
+    driver: local
+
+services:
+  postgres:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "MyOrdersDb"
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    container_name: mydatabase
+
+  myorders.web.api:
+    image: myorderswebapi
+    build:
+      context: .
+      dockerfile: MyOrders/MyOrders.Web.Api/Dockerfile
+    environment:
+       - ASPNETCORE_ENVIRONMENT=Docker
+       - ConnectionStrings__MyOrdersContext=Host=host.docker.internal;Port=5432;Database=MyOrdersDb;User Id=postgres;Password=password;Timeout=15;
+    container_name: myorders
+    ports:
+      - "5500:80"
