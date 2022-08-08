@@ -27,3 +27,12 @@ services:
     container_name: myorders
     ports:
       - "5500:80"
+
+  proxyserver:
+    image: nginx:1.21.1
+    volumes:
+        - ./Nginx/proxy:/etc/nginx/conf.d/
+        - ./Nginx/proxy/nginx.conf:/etc/nginx/nginx.conf
+    container_name: proxy
+    ports:
+        - "80:80"

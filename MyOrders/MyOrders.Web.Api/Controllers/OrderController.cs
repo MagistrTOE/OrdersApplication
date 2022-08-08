@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using MyOrders.Application.ActionMethods.Orders.Create;
 using MyOrders.Application.ActionMethods.Orders.GetOrdersList;

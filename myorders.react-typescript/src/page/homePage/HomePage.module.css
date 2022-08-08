@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Marck+Script&display=swap');
+
+.Presentation {
+  position:absolute;
+  width:160mm;
+  height: 198mm;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background: url('../../image/homeImage.png') no-repeat ;
+  background-size:600px;
+}
+.Shadow {
+  position:absolute;
+  width:120mm;
+  height: 185mm;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  box-shadow: 12mm 8mm 10mm 3mm rgb(59, 59, 59);   
+}
+.Head {
+  position: absolute;
+  margin-top: 25mm;
+  margin-left: 60mm;
+  font-family: 'Marck Script', cursive;
+  color: rgba(72, 72, 72, 0.771);
+  font-size:20mm;
+}
+.ForButtonCreate {
+  margin-top: 49mm;
+  margin-left: 60mm;
+}
+.ForButtonOrders {
+  margin-top: 2mm;
+  margin-left: 60mm;
+}
+.Sign{
+  margin-top: 115mm;
+  margin-left: 110mm;
+  font-family: 'Kaushan Script', cursive;
+  color: rgba(72, 72, 72, 0.397);
+  font-size:7mm;
+}

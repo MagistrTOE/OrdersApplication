@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+.Presentation {
+  position:absolute;
+  width:160mm;
+  height: 220mm;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background: url('../../image/addOrderImage.png') no-repeat ;
+  background-size:600px;
+}
+.Shadow {
+  position:absolute;
+  width:130mm;
+  height: 195mm;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  box-shadow: 12mm 8mm 10mm 3mm rgb(59, 59, 59);
+}
+.Head {
+  width:130mm;
+  height: 20mm;
+  position: absolute;
+  margin-top: 14mm;
+  margin-left: 45mm;
+  font-family: 'Marck Script', cursive;
+  color: rgba(72, 72, 72, 0.549);
+  font-size:15mm;
+}
+.Form {
+  margin-top: 39mm;
+  margin-left: 32mm;
+
+}
+.Text{
+  margin-top: 5mm;
+  margin-left: 30mm;
+  margin-bottom: 4mm;
+  color: rgba(72, 72, 72, 0.793);
+  font-size:5mm;
+  font-weight:bolder;
+}
+.ForButtonAdd{
+  margin-top: 25mm;
+  margin-left: 20mm;
+}
+.ForButtonBack {
+  margin-top: 6mm;
+  margin-left: 52mm;  
+}

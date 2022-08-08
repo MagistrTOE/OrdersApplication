@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+.NavButton {
+    width:60mm;
+    height:9mm;  
+    display: inline-block;
+    color: rgb(54, 54, 54);
+    font-family: 'Marck Script', cursive;
+    font-size: 150%;
+    font-weight: 550;
+    padding: .0em .80em;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 7px;
+    background: linear-gradient(rgba(255, 253, 253, 0.571), rgba(181, 181, 181, 0.527));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .3s, border-color .3s;
+    cursor: pointer;
+}
+.NavButton:hover {
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(156, 156, 156, 0.689);
+}
+.NavButton:active {
+    border-color: rgb(129, 129, 129);
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(134, 134, 134, 0.45);
+}
+.PageButton {
+    width:10mm;
+    height:9mm;  
+    display: inline-block;
+    color: rgb(250, 246, 246);
+    font-family: 'Marck Script', cursive;
+    font-size: 150%;
+    font-weight: 550;
+    padding: .0em .0em;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 7px;
+    background: linear-gradient(rgba(100, 99, 99, 0.653), rgba(0, 0, 0, 0.81));
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .3s, border-color .3s;
+    cursor: pointer;
+}
+.PageButton:hover {
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(156, 156, 156, 0.689);
+}
+.PageButton:active {
+    border-color: rgb(129, 129, 129);
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(134, 134, 134, 0.45);
+}

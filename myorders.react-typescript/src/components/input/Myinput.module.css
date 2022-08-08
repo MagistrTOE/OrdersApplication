@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+.Input {
+    width: 100mm;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: rgba(203, 203, 203, 0.403);
+    background-repeat: no-repeat;
+    padding: 5px 15px 2px 15px;
+    margin-top: 3px;
+    margin-bottom:5px;
+    font-family: 'Marck Script', cursive;
+    color: rgba(72, 72, 72, 0.771);
+    font-size:30px;
+}

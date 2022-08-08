@@ -1,0 +1,19 @@
+.myTable {
+    margin-bottom: 57px;  
+}
+.myTable td:first-child {
+    width: 38mm;
+    border: solid rgba(159, 159, 159, 0.668) 1px;
+    border-radius: 10px;
+    text-align:center;
+    font-weight:bold;
+    background: radial-gradient(#e8e7e7ef, #9896967f);
+}
+.myTable td{
+    width: 62mm;
+    border: solid rgba(190, 190, 190, 0.668) 1px;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: left;
+    background: radial-gradient(#ffffff, #d8d7d7ac);
+}
