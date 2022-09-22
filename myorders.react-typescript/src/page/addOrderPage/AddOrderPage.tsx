@@ -24,18 +24,29 @@ const AddOrderPage: React.FC = () => {
 
 
     const clickHahdler  = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault()
+        e.preventDefault();
 
-        let field = Object.values(order)
+        let field = Object.values(order);
+        let state = true;
+        
         for (let i = 0; i < field.length; i++){
-            if(field[i]==""){window.alert("Заполните все поля");break}}
-            
-        axios.post<IAddedOrderId>('http://localhost/myorders/', order)
+            if(field[i]=="")
+            {
+                window.alert("Заполните все поля");
+                state = false;
+                break;
+            }           
+        }
+
+        if (state == true)
+        {
+            axios.post<IAddedOrderId>('http://localhost/myorders/', order)
             .then(response => {
                 console.log(response.data)
                 window.alert('Заказ успешно добавлен! \nID заказа: '+response.data.id)
                 window.location.reload()
-            }) 
+            }).catch(err => window.alert('Проблема с сервером! \n'+err))
+        }             
     }              
     
     const navigate = useNavigate()

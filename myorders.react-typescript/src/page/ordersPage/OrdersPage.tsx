@@ -6,7 +6,7 @@ import usePagination from '../../components/usePagination';
 import style from './OrdersPage.module.css';
 import Mybutton from '../../components/button/Mybutton';
 import { useNavigate } from 'react-router-dom';
-import styleButton from '../../components/button/Mybutton.module.css'
+import styleButton from '../../components/button/Mybutton.module.css';
 
 const OrdersPage: React.FC = () => {
 const [orders, setOrders] = useState<IOrder[]>([])
@@ -17,10 +17,11 @@ async function getOrders() {
     try {
         const response = await axios.get<IOrder[]>('http://localhost/myorders/list')
         setOrders(response.data)
-        }
+    }
     catch (e) {
-        alert(e)
-        } 
+        alert('Проблема с сервером! \n'+e)
+        window.location.href = '/';  
+    } 
     }
     
 const {

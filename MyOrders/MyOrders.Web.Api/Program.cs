@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyModel;
 using MyOrders.Domain;
 using MyOrders.Infrastructure;
-using MyOrders.Web.Api.ExtensionsForProgram;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -40,10 +39,7 @@ builder.Services.AddSingleton<IMapper>(mapper);
 
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddControllers(options =>
-{
-    options.UseCentralRoutePrefix("orders");
-});
+builder.Services.AddControllers();
 
 builder.Host.UseSerilog((ctx, lc) => lc
     .WriteTo.Console());
@@ -53,9 +49,6 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 
 app.UseDeveloperExceptionPage();
-
-
-app.UseHttpsRedirection();
 
 app.UseSwagger();
 
