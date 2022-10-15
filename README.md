@@ -13,6 +13,7 @@
     "MyOrdersContext": "User ID=postgres;Password=password;Host=mydatabase;Port=5432;Database=MyOrdersDb;"
   }
   ```
+  
 Запуск проекта:
 ---------------
 1. Склонировать с репозитория **OrdersApplication** все файлы 
@@ -25,3 +26,9 @@
   ```npm install```
 6. Запустить React приложение командой:
   ```npm run start``` 
+  
+Обзор проекта:
+---------------
+<p align="center">
+ <img src="https://github.com/MagistrTOE/OrdersApplication/blob/main/Review/Review.gif" text-aligncenter />
+</p>
